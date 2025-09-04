@@ -181,7 +181,7 @@ int main()
 
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
-            movement.x -= speed/10;
+            movement.x -= speed/5;
             rotation -= sf::degrees(0.09);
         }
         if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) && canJump == true) {
@@ -194,7 +194,7 @@ int main()
             movement.y += speed;
         }*/
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
-            movement.x += speed;
+            movement.x += speed / 5;
             rotation += sf::degrees(0.09);
         }
 
